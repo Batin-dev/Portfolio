@@ -46,7 +46,7 @@ transition: .3s;
 
 .home  {
     height: 100vh;
-    background: url('wallpaper.jpg');
+    background: url('portfolio.gif');
     background-size: cover;
     background-position: center;
     display: flex;
