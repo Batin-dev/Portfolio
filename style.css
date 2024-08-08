@@ -46,7 +46,7 @@ transition: .3s;
 
 .home  {
     height: 100vh;
-    background: url('/images/wallpaper.png') no-repeat;
+    background: url('wallpaper.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -70,8 +70,9 @@ transition: .3s;
 }
 
 .home-content p {
-font-size: 16px;
-margin: 20px 0 40px;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    width: 800px;
 }
 .home-content .btn-box {
     display: flex;
