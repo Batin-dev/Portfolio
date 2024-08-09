@@ -12,7 +12,7 @@ body {
 
 .header {
     position: fixed;
-    top: 0;
+    top: 5px;
     left: 0;
     width: 100%;
     padding: 20px 10%;
@@ -29,6 +29,7 @@ body {
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
+    text-shadow: 0 0 3px #00abf0, 0 0 5px #00abf0, 0 0 7px #00abf0;
 }
 
 .navbar a {
@@ -98,11 +99,13 @@ transition: .3s;
     letter-spacing: 1px;
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: .4s;
+    transform: scale(1);
 }
 
 .btn-box a:hover {
     color: #00abf0;
+    transform: scale(1.05);
 }
 
 .btn-box a:nth-child(2) {
@@ -114,7 +117,7 @@ transition: .3s;
 
 }
 .btn-box a:nth-child(2)::before {
-background: #00abf0;
+    background: #00abf0;
 }
 
 .btn-box a::before {
@@ -132,6 +135,7 @@ background: #00abf0;
 .btn-box a:hover::before {
     width: 100%;
 }
+
 
 .home-sci {
     position: absolute;
@@ -177,4 +181,14 @@ background: #00abf0;
 
 .home-sci a:hover::before {
     width: 100%;
+}
+
+
+.glow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    box-shadow: 0 0 30px 15px rgba(13, 171, 224, 0.13);
+    transition: transform 0.1s;
 }
