@@ -7,8 +7,10 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
+    <div id="background"></div>
     <div class="glow"></div>
     <header class="header">
         <a href="index.html" class="logo">Batin.dev</a>
@@ -23,10 +25,13 @@
     <section class="home">
         <div class="home-content">
             <h1>Hi, I'm Batin</h1>
-            <h3>Game Developer</h3>
-            <p>I am a skilled developer with a passion for creating immersive 3D scenes and games using Unreal Engine. With a strong foundation in programming and a knack for visual storytelling, I bring virtual worlds to life, blending creativity with technical expertise. My projects span from intricate game levels to detailed 3D environments, showcasing my ability to craft engaging and interactive experiences. In addition to my work with Unreal Engine, I also develop various software programs, continuously expanding my skill set to include the latest technologies and methodologies. Whether it's game development, 3D visualization, or software engineering, I thrive on challenges and am dedicated to delivering high-quality, innovative solutions.</p>
+            <h3><span id="typed"></span></h3>
+            <p>
+                <p><strong>I am a passionate developer specializing in creating immersive 3D scenes and games with Unreal Engine.</strong> While I am primarily an Unreal Coder, I am rapidly advancing towards full-stack development by exploring 3D artistry. In addition to game development, I create various applications and continuously expand my skill set with the latest technologies. <strong>Whether it's game development, 3D visualization, or software engineering, I am committed to overcoming challenges and delivering high-quality, innovative solutions.</strong> For more information, please check out my <a class="link" href="#">Skills</a> and <a class="link" href="#">Projects</a> sections.</p>
+            </p>            
+                      
             <div class="btn-box">
-                <a href="#">See Projects</a>
+                <a href="#">Projects</a>
                 <a href="contact.html">Let's Talk</a>
             </div>
         </div>
@@ -36,9 +41,10 @@
             <a href="https://www.instagram.com/batin.cpp/"><i class='bx bxl-instagram' ></i></a>
             <a href="https://github.com/Batin-dev"><i class='bx bxl-github' ></i></a>
         </div>
+        <span class="home-imgHover">
+            
+        </span>
     </section>
-    
-
     <script src="script.js"></script>
 </body>
 </html>

@@ -7,6 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
+    overflow: hidden;
+    background-color: #090316;
     color: #ededed;
 }
 
@@ -24,6 +26,12 @@ body {
     
 }
 
+.link {
+    color: white;
+    box-shadow: 0 0 30px 15px rgba(10, 143, 187, 0.027);
+    transition: transform 0.1s;
+}
+
 .logo {
     font-size: 25px;
     color: #ededed;
@@ -31,7 +39,6 @@ body {
     font-weight: 600;
     text-shadow: 0 0 3px #00abf0, 0 0 5px #00abf0, 0 0 7px #00abf0;
 }
-
 .navbar a {
 font-size: 18px;
 color: #ededed;
@@ -47,7 +54,7 @@ transition: .3s;
 
 .home  {
     height: 100vh;
-    background: url('portfolio.gif');
+    background: url('newport.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -189,6 +196,59 @@ transition: .3s;
     width: 0;
     height: 0;
     pointer-events: none;
-    box-shadow: 0 0 30px 15px rgba(13, 171, 224, 0.13);
+    box-shadow: 0 0 30px 15px rgba(13, 128, 167, 0.322);
     transition: transform 0.1s;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 2px;
+    height: 2px; 
+    opacity: 0;
+    animation: fadeInOut linear infinite, moveStars linear infinite;
+}
+
+@keyframes moveStars {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100vw, 100vh);
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 10%, 90%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 600px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+.home-imgHover:hover {
+    background:  #090316;
+    opacity: .8;
 }
