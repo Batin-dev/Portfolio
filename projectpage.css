@@ -1,0 +1,219 @@
+@import url('"https://fonts.googleapis.com/css2?family=Poppins:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #090316;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.link {
+    color: white;
+    box-shadow: 0 0 30px 15px rgba(10, 143, 187, 0.027);
+    transition: transform 0.1s;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 0 0 3px #00abf0, 0 0 5px #00abf0, 0 0 7px #00abf0;
+}
+.navbar a {
+font-size: 18px;
+color: #ededed;
+text-decoration: none;
+margin-left: 35px;
+transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+
+
+.glow {
+    position: fixed;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    box-shadow: 0 0 30px 15px rgba(13, 128, 167, 0.322);
+    transition: transform 0.1s;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #081b29;
+}
+
+.projects {
+    padding: 150px 10% 100px;
+    background-color: #090316;
+    color: #ededed;
+}
+
+.projects-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-category {
+    margin-bottom: 50px;
+}
+
+.project-category h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    position: relative;
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #00abf0;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.project-preview {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.project-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 171, 240, 0.5);
+}
+
+.project-item:hover .project-preview {
+    display: block;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border: 5px solid #00abf0;
+}
+
+#modal-link {
+    margin-top: 20px;
+    color: #ededed;
+}
+
+#modal-link a {
+    color: #00abf0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#modal-link a:hover {
+    text-decoration: underline;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #ededed;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #00abf0;
+}
+
+.github-info {
+    text-shadow: 0 0 5px rgba(0, 171, 240, 0.5);
+    font-size: 14px;
+    color: #00abf0;
+}
+
+.github-info div {
+    margin-bottom: 5px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.github-stars,
+.github-watchers {
+    font-weight: bold;
+}
+
+.github-stars:hover,
+.github-watchers:hover {
+    color: #ca57ff;
+    text-shadow: 0 0 5px #00abf0, 0 0 10px #00abf0, 0 0 20px #00abf0;
+}

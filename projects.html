@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="projectpage.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="background"></div>
+    <div class="glow"></div>
+    <header class="header">
+        <a href="index.html" class="logo">Batin.dev</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#">Skills</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="projects">
+        <div class="projects-content">
+            <h1>My Projects</h1>
+            <div class="project-category">
+                <h2>3D Scenes</h2>
+                <div class="project-grid">
+                    <div class="project-item" onclick="openModal('3d_night.png', 'https://www.artstation.com/artwork/L42Wgw')">
+                        <img src="3d_nightCB.png" alt="3D Scene 1">
+                    </div>
+                    <div class="project-item" onclick="openModal('3d_campstalker.png', 'https://www.artstation.com/artwork/1xzDRG')">
+                        <img src="3d_campstalker.png" alt="3D Scene 2">
+                    </div>
+                    <div class="project-item" onclick="openModal('3d_mistforest.png', 'https://www.artstation.com/artwork/LR144R')">
+                        <img src="3d_mistforestCB.png" alt="3D Scene 3">
+                    </div>
+                    <div class="project-item" onclick="openModal('3d_aircraft1.png', 'https://artstation.com/')">
+                        <img src="3d_aircraft1.png" alt="3D Scene 4">
+                    </div>
+                </div>
+            </div>
+            <div class="project-category">
+                <h2>Programs/Git</h2>
+                <div class="project-grid">
+                    <div class="project-item" onclick="redirectToGithub('https://github.com/Batin-dev/DDLC-Purist-Turkish-Translate')">
+                        <h3>Purist Turkish Translate</h3>
+                        <p>A mod that extends to 11 hours, purist is one of the most acclaimed mods of the ddlc. it is my first translation project</p>
+                        <div class="github-info" id="github-info-1"></div>
+                    </div>
+                    <div class="project-item" onclick="redirectToGithub('https://github.com/Batin-dev/Portfolio')">
+                        <h3>This portfolio</h3>
+                        <p>Description of Program/Git Project 2</p>
+                        <div class="github-info" id="github-info-2"></div>
+                    </div>
+                    <div class="project-item" onclick="redirectToGithub('https://github.com/Batin-dev/Translate-App')">
+                        <h3>Translate App</h3>
+                        <p>A simple translation app , made with C#</p>
+                        <div class="github-info" id="github-info-3"></div>
+                    </div>
+                    <div class="project-item" onclick="redirectToGithub('https://github.com/Batin-dev/WeatherApp')">
+                        <h3>Weather App</h3>
+                        <p>This Python program fetches the current weather information for a specified city using the OpenWeatherMap</p>
+                        <div class="github-info" id="github-info-4"></div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="project-category">
+                <h2>Games</h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <h3>Project 1</h3>
+                        <p>Description of Game Project 1</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project 2</h3>
+                        <p>Description of Game Project 2</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project 3</h3>
+                        <p>Description of Game Project 3</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project 4</h3>
+                        <p>Description of Game Project 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="modal-caption"></div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        function redirectToGithub(url) {
+            window.open(url, '_blank');
+        }
+        </script>
+        
+</body>
+</html>
